@@ -1,3 +1,7 @@
+/*
+ * This version of a linked list follows the FIFO design
+ */
+
 package stacks;
 
 public class Stack {
