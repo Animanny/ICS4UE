@@ -15,23 +15,23 @@ public class MyLL {
 			toAdd.setNext(frontOfList);
 			numItems++;
 			frontOfList = toAdd;
-			System.out.println("Successfully added");
 		}
+		System.out.println("Successfully added");
 	}
 
-	
-	public void removeFromRear(){
-		if( rearOfList == null){
-			
+	public void removeFromRear() {
+		if (rearOfList == null) {
+
 		} else {
 			current = frontOfList;
-			for (int x = 1;x< numItems;x++){
+			for (int x = 1; x < numItems; x++) {
 				current.setNext(current.getNext());
 			}
-			current.setNext(null);
 			numItems--;
+			current.setNext(null);
 		}
-		
+		System.out.println("\n"+"Successfully Removed");
+
 	}
 
 	public void displayList() {
@@ -39,7 +39,8 @@ public class MyLL {
 
 		current = frontOfList;
 		for (int x = 1; x <= numItems; x++) {
-			System.out.println(current.getFirstName() + " " + current.getLastName() + " - " + current.getStudentNumber());
+			System.out
+					.println(current.getFirstName() + " " + current.getLastName() + " - " + current.getStudentNumber());
 
 			current = current.getNext();
 		}

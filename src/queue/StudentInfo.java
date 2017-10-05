@@ -56,7 +56,7 @@ public class StudentInfo {
 		if (studentNumber >= 1) {
 			this.studentNumber = studentNumber;
 		} else {
-			System.out.println("Student Number not Valid");
+			System.out.println("Node Number not Valid");
 		}
 
 	}

@@ -1,6 +1,7 @@
 package linkedlist;
 
-public class TestLL {
+public class Main {
+	
 
 	public static void main(String[] args) {
 
@@ -13,6 +14,7 @@ public class TestLL {
 		linkedList.displayList();
 		linkedList.removeFromRear();
 		linkedList.displayList();
+		
 	}
 	
 }
