@@ -21,17 +21,17 @@ public class MyBinaryTree {
 			root = toAdd; //If there are no items in the tree (e.g. of instantiation) then set the root to the given data
 		} else {
 
-			if (toAdd.getKey() < targetNode.getKey()) { 
+			if (toAdd.getStudentNum() < targetNode.getStudentNum()) { 
 				if (targetNode.getLeft() == null) {
-					targetNode.setLeft(toAdd);	//IF the key provided is less than the target node key AND the target node's left value is null, fill the left value with the provided node 
+					targetNode.setLeft(toAdd);	//IF the studentNum provided is less than the target node studentNum AND the target node's left value is null, fill the left value with the provided node 
 				} else {
-					addToTree(targetNode.getLeft(), toAdd);//IF the key provided is less than the target node key BUT the target node's left value is full, restart the process but use that left value as the new targetNode.
+					addToTree(targetNode.getLeft(), toAdd);//IF the studentNum provided is less than the target node studentNum BUT the target node's left value is full, restart the process but use that left value as the new targetNode.
 				}
 			} else {
 				if (targetNode.getRight() == null) {
-					targetNode.setRight(toAdd); //IF the key provided is greater than the key and the target node's right value is null, fill the right value with the provided node
+					targetNode.setRight(toAdd); //IF the studentNum provided is greater than the studentNum and the target node's right value is null, fill the right value with the provided node
 				} else {
-					addToTree(targetNode.getRight(), toAdd);//IF the key provided is greater than the given key, BUT the target node's right value is full, restart the process but use that right value as the new target node.
+					addToTree(targetNode.getRight(), toAdd);//IF the studentNum provided is greater than the given studentNum, BUT the target node's right value is full, restart the process but use that right value as the new target node.
 				}
 			}
 		}
@@ -41,8 +41,8 @@ public class MyBinaryTree {
 	public void inorder(StudentInfo targetNode) {
 
 		if (targetNode != null) {
-			inorder(targetNode.getLeft());
-			System.out.println(targetNode.getKey());
+			inorder(targetNode.getLeft());//Effectively, as long as there's a place to go, keep going left
+			System.out.println(targetNode.getStudentNum());
 			inorder(targetNode.getRight());
 		}
 
@@ -50,7 +50,7 @@ public class MyBinaryTree {
 
 	public void preorder(StudentInfo targetNode) {
 		if (targetNode != null) {
-			System.out.println(targetNode.getKey());
+			System.out.println(targetNode.getStudentNum());
 			preorder(targetNode.getLeft());
 			preorder(targetNode.getRight());
 		}
@@ -60,7 +60,7 @@ public class MyBinaryTree {
 		if (targetNode != null) {
 			postorder(targetNode.getLeft());
 			postorder(targetNode.getRight());
-			System.out.println(targetNode.getKey());
+			System.out.println(targetNode.getStudentNum());
 		}
 	}
 

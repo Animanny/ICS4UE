@@ -9,6 +9,8 @@ public class BinaryTreeTest {
 
 		MyBinaryTree b = new MyBinaryTree();
 		int input = 0;
+		String firstName;
+		String lastName;
 
 		Scanner sc = new Scanner(System.in);
 		while (input >= 0) {
