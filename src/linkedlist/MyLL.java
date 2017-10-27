@@ -1,5 +1,12 @@
 package linkedlist;
 
+/**
+ * MyLL is data structure that will create a linked list with commands that allow
+ * for manipulation of said linkedlist.
+ * @author Ani
+ *
+ */
+
 public class MyLL {
 	StudentInfo frontOfList = null;
 	StudentInfo rearOfList = null;
