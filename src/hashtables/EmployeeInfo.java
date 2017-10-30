@@ -1,12 +1,12 @@
 package hashtables;
 
 public class EmployeeInfo {
-	private String firstName;
-	private String lastName;
-	private int empNumber;
-	private Gender gender;
-	private Location location;
-	private double deductRate;
+	protected String firstName;
+	protected String lastName;
+	protected int empNumber;
+	protected Gender gender;
+	protected Location location;
+	protected double deductRate;
 	
 	public EmployeeInfo(int employeeNumber){
 		this.empNumber = employeeNumber;
