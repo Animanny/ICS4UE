@@ -1,9 +1,5 @@
 # ICS4UE
-This is for those of you that do not understand what is happening in this class.
+This is for those of you that do not understand what is happening in this class. I feel you <3
 
-Do __NOT__ copy, you'll just screw the both of us.
+Do __NOT__ copy, you'll just screw the both of us. Let's both succeed!
 I am sorry if I don't comment
-
-Hacktober Fest 1
-Hacktober Fest 2
-Hacktober Fest 3
