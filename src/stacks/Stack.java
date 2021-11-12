@@ -29,8 +29,10 @@ public class Stack {
 	public void pop(){
 		if (numItems == 0){
 			System.out.println("There are no items in the list!");
+			return;
 		}
 		TOS = TOS.getNext();
+		numItems--;
 		
 		
 	}
